@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Open Colloquium — Institute of Sports Science</title>
+<meta name="description" content="Open Colloquium seminar at the Institute of Sports Science, Saarland University." />
+<link rel="icon" href="assets/icons/seminars-favicon.svg" type="image/svg+xml" />
+<link rel="manifest" href="site.webmanifest" />
+<meta name="theme-color" content="#143d6b" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">SWI</span>
+      <span class="brand-copy">
+        <strong>Institute of Sports Science</strong>
+        <span>Saarland University Seminar Series</span>
+      </span>
+    </a>
+    <button type="button" class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Reading Group</a></li>
+      <li><a class="active" href="open-colloquium.html">Open Colloquium</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero-panel hero-panel-alt">
+    <div class="hero-inner">
+      <p class="eyebrow">Institute of Sports Science</p>
+      <div class="title-row">
+        <div>
+          <h1>Open Colloquium</h1>
+          <p class="hero-version">v1.0 | Owner Sunjae Kwon | First Monday each month, 4pm | Hybrid</p>
+        </div>
+        <div class="hero-badge">A concise presentation forum shared across chairs at SWI and Saarland University.</div>
+      </div>
+      <p class="hero-lead">The Open Colloquium brings together the Chairs of Sports Medicine and Sports Analytics for short, focused presentations, interdisciplinary exchange, and a visible forum for promising student and researcher work.</p>
+      <div class="chip-row">
+        <span class="chip">Monthly cadence</span>
+        <span class="chip">Hybrid attendance</span>
+        <span class="chip">Short-form presentations</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-shell">
+    <div class="section-grid">
+      <article class="panel">
+        <p class="section-label">Purpose</p>
+        <h2>Objectives</h2>
+        <ul class="bullet-list">
+          <li>Enable knowledge exchange between chairs at SWI and Saarland University.</li>
+          <li>Foster interdisciplinary discussion across methods, topics, and research cultures.</li>
+          <li>Create a forum in which PhD students can present their work.</li>
+          <li>Invite external researchers, including colleagues from other departments at Saarland University.</li>
+          <li>Provide an additional stage for extraordinary master students to present their work.</li>
+        </ul>
+      </article>
+
+      <aside class="panel accent-panel">
+        <p class="section-label">Format</p>
+        <h2>Session profile</h2>
+        <p class="callout">The colloquium is intended to be hosted preferably onsite in Saarbruecken, with remote participation generally possible so the format remains open and accessible across the institute&apos;s network.</p>
+        <dl class="detail-list">
+          <div>
+            <dt>Cadence</dt>
+            <dd>First Monday of each month, 4pm</dd>
+          </div>
+          <div>
+            <dt>Mode</dt>
+            <dd>Hybrid</dd>
+          </div>
+          <div>
+            <dt>Owner</dt>
+            <dd>Sunjae Kwon</dd>
+          </div>
+          <div>
+            <dt>Start</dt>
+            <dd>From May 2026</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+
+    <section class="panel full-width">
+      <p class="section-label">Rules</p>
+      <h2>Presentation guidelines</h2>
+      <ul class="rule-list">
+        <li>The format is reserved for presentations by PhD students, researchers, or extraordinary master students.</li>
+        <li>Presentations should be concise, roughly 5 to 15 minutes, with at least an equal amount of time reserved for questions.</li>
+        <li>Multiple presentations can be held in one session, with a maximum of 3 talks.</li>
+        <li>Relevant presentations from the Chair of Sports Analytics may be presented in the internal colloquium first so feedback can be integrated.</li>
+        <li>All chairs are encouraged to suggest or submit contributions by adding presenter names and topics to the shared session planning list.</li>
+        <li>The final agenda for each session is arranged and shared by the meeting owner.</li>
+      </ul>
+    </section>
+
+    <section class="section-grid">
+      <article class="panel">
+        <p class="section-label">Value of the format</p>
+        <h2>Why it matters</h2>
+        <p>Because talks are intentionally short, the colloquium can surface more work-in-progress, create faster feedback loops, and make interdisciplinary exchange feel routine rather than exceptional.</p>
+      </article>
+
+      <article class="panel">
+        <p class="section-label">Best use cases</p>
+        <h2>What belongs here</h2>
+        <p>The strongest contributions are focused research snapshots, method demos, early findings, or problem statements that benefit from cross-chair input without requiring a full-length seminar.</p>
+      </article>
+    </section>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Institute of Sports Science, Saarland University</p>
+  <p>&copy; <span id="year"></span> Seminar Series</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
