@@ -318,6 +318,59 @@ a:hover {
   color: var(--ink);
 }
 
+.schedule-intro {
+  margin-bottom: 18px;
+}
+
+.schedule-table-wrap {
+  overflow-x: auto;
+  border-radius: 18px;
+  border: 1px solid rgba(20, 61, 107, 0.12);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid rgba(20, 61, 107, 0.1);
+  border-right: 1px solid rgba(20, 61, 107, 0.08);
+  font-size: 0.95rem;
+}
+
+.schedule-table th:last-child,
+.schedule-table td:last-child {
+  border-right: 0;
+}
+
+.schedule-table thead th {
+  background: rgba(20, 61, 107, 0.08);
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.schedule-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.schedule-table td:first-child {
+  width: 110px;
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.schedule-empty {
+  color: rgba(88, 101, 122, 0.72);
+}
+
 .footer {
   padding: 0 24px 54px;
   text-align: center;
