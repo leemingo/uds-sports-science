@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Members — KAISports</title>
+<meta name="description" content="Coordinators and members of KAISports — Korea AI Research Society for Sports." />
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="alternate icon" href="assets/icons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+<meta name="theme-color" content="#0b6e4f" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="logo"><img src="assets/icons/kaisports-mark.svg" alt="KAISports logo" /></span>
+      <span>KAISports</span>
+    </a>
+    <button type="button" class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="presentations.html">Presentations</a></li>
+      <li><a href="gatherings.html">Gatherings</a></li>
+      <li><a class="active" href="members.html">Members</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <h1>Members</h1>
+    <p>Coordinators and members behind KAISports research.</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <h2 class="group-heading">Coordinators</h2>
+  <div class="members-grid">
+
+    <div class="member-card">
+      <div class="avatar" data-photo="assets/members/sang-ki-ko.jpg" aria-label="Sang-Ki Ko"></div>
+      <h3>Sang-Ki Ko</h3>
+      <p class="role">
+        <span>Assistant Professor, University of Seoul</span>
+        <span>TSG Member, K League</span>
+      </p>
+    </div>
+
+    <div class="member-card">
+      <div class="avatar" data-photo="assets/members/hyunsung-kim.jpg" aria-label="Hyunsung Kim"></div>
+      <h3>Hyunsung Kim</h3>
+      <p class="role">
+        <span>Ph.D. Student, KAIST</span>
+        <span>Data Scientist, Fitogether</span>
+      </p>
+    </div>
+
+    <div class="member-card">
+      <div class="avatar" data-photo="assets/members/minho-lee.jpg" aria-label="Minho Lee"></div>
+      <h3>Minho Lee</h3>
+      <p class="role">
+        <span>Ph.D. Candidate, Saarland University</span>
+      </p>
+    </div>
+
+  </div>
+
+  <h2 class="group-heading">Members</h2>
+  <div class="members-grid">
+
+    <div class="member-card">
+      <div class="avatar" data-photo="assets/members/jaemin-lee.jpg" aria-label="Jaemin Lee"></div>
+      <h3>Jaemin Lee</h3>
+      <p class="role">
+        <span>SW Engineer, Samsung Electronics</span>
+      </p>
+    </div>
+
+    <div class="member-card">
+      <div class="avatar" data-photo="assets/members/geonhee-jo.jpg" aria-label="Geonhee Jo"></div>
+      <h3>Geonhee Jo</h3>
+      <p class="role">
+        <span>M.S. Student, University of Seoul</span>
+      </p>
+    </div>
+
+    <div class="member-card">
+      <div class="avatar" data-photo="assets/members/miru-hong.jpg" aria-label="Miru Hong"></div>
+      <h3>Miru Hong</h3>
+      <p class="role">
+        <span>M.S. Student, University of Seoul</span>
+      </p>
+    </div>
+
+    <div class="member-card">
+      <div class="avatar" data-photo="assets/members/jae-hee-so.jpg" aria-label="Jae-hee So"></div>
+      <h3>Jae-hee So</h3>
+      <p class="role">
+        <span>Junior Economist, Bank of Korea</span>
+      </p>
+    </div>
+
+  </div>
+
+  <h2 class="group-heading">Corporate Partners</h2>
+  <div class="partner-logos">
+    <div class="partner">
+      <img src="assets/partners/fitogether.png" alt="Fitogether Inc." loading="lazy" />
+      <span>Fitogether Inc.</span>
+    </div>
+    <div class="partner">
+      <img src="assets/partners/university-of-seoul.png" alt="University of Seoul" loading="lazy" />
+      <span>University of Seoul</span>
+    </div>
+    <div class="partner">
+      <img src="assets/partners/k-league.png" alt="K League" loading="lazy" />
+      <span>K League</span>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>Contact: <a class="email" href="mailto:thedatadribblers@gmail.com">thedatadribblers [at] gmail.com</a></p>
+  <p>&copy; <span id="year"></span> KAISports — Korea AI Research Society for Sports</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('.member-card .avatar[data-photo]').forEach(el => {
+  el.style.backgroundImage = `url('${el.dataset.photo}')`;
+});
+</script>
+</body>
+</html>

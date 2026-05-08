@@ -1,0 +1,13 @@
+{
+  "name": "KAISports — Korea AI Research Society for Sports",
+  "short_name": "KAISports",
+  "description": "Sports analytics, game strategy, and athlete performance enhancement powered by AI and data science.",
+  "icons": [
+    { "src": "assets/icons/android-chrome-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/android-chrome-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0b6e4f",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "./"
+}

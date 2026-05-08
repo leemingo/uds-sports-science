@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Presentations — KAISports</title>
+<meta name="description" content="Talks and presentations by KAISports members." />
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="alternate icon" href="assets/icons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+<meta name="theme-color" content="#0b6e4f" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="logo"><img src="assets/icons/kaisports-mark.svg" alt="KAISports logo" /></span>
+      <span>KAISports</span>
+    </a>
+    <button type="button" class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a class="active" href="presentations.html">Presentations</a></li>
+      <li><a href="gatherings.html">Gatherings</a></li>
+      <li><a href="members.html">Members</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <h1>Presentations</h1>
+    <p>Talks, conference presentations, and invited lectures.</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <h2 class="group-heading">2026</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="date">March 9, 2026</div>
+      <div class="title">MIT Sloan Sports Analytics Conference</div>
+      <p class="desc">Two papers accepted: "Valuing La Pausa: Quantifying Optimal Pass Timing Beyond Speed" (Finalist) and "Better Prevent than Tackle: Valuing Defense in Soccer Based on Graph Neural Networks" (Poster).</p>
+    </div>
+  </div>
+
+  <h2 class="group-heading">2025</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="date">November 15, 2025</div>
+      <div class="title">Hudl Performance Insights — "EventGPT: Capturing Player Impact from Team Action Sequences"</div>
+      <p class="desc">A GPT-based framework presented at Hudl Performance Insights for transfer fit analysis.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="date">November 13, 2025</div>
+      <div class="title">K League Data Analysis Academy</div>
+      <p class="desc">Presentation by KAISports members for the K League data analysis program.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="date">November 11, 2025</div>
+      <div class="title">CIKM 2025 — "Imputing Multi-Agent Trajectories from Event and Snapshot Data in Soccer"</div>
+      <p class="desc">Paper presented at the ACM International Conference on Information and Knowledge Management.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="date">September 15, 2025</div>
+      <div class="title">ECML PKDD 2025</div>
+      <p class="desc">Three papers presented covering player pressing evaluation and trajectory imputation.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="date">July 24, 2025</div>
+      <div class="title">Nagoya University ML Sports Workshop — "Imputing Multi-Agent Trajectories from Event and Snapshot Data in Soccer"</div>
+      <p class="desc">Workshop talk; the paper was also accepted to CIKM 2025.</p>
+    </div>
+
+    <div class="timeline-item">
+      <div class="date">January 17, 2025</div>
+      <div class="title">MIT Sloan Sports Analytics Conference — "exPress: Contextual Valuation of Individual Players Within Pressing Situations in Soccer"</div>
+      <p class="desc">Presentation of the exPress framework.</p>
+    </div>
+  </div>
+
+  <h2 class="group-heading">2024</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="date">December 13, 2024</div>
+      <div class="title">University of Seoul Guest Lecture — "Football Data Analysis Using AI and Data Science Technologies"</div>
+      <p class="desc">Invited lecture by Hyunsung Kim.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>Contact: <a class="email" href="mailto:thedatadribblers@gmail.com">thedatadribblers [at] gmail.com</a></p>
+  <p>&copy; <span id="year"></span> KAISports — Korea AI Research Society for Sports</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

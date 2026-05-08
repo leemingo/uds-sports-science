@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KAISports Insights를 시작합니다 — KAISports</title>
+<meta name="description" content="KAISports Insights 첫 글 — 앞으로 K리그를 데이터로 풀어내고, 최신 AI 방법론을 친절하게 소개하며, 스포츠 과학과의 접점에서 발견한 이야기들을 나누겠습니다." />
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="alternate icon" href="../assets/icons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
+<link rel="manifest" href="../site.webmanifest" />
+<meta name="theme-color" content="#0b6e4f" />
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="../index.html">
+      <span class="logo"><img src="../assets/icons/kaisports-mark.svg" alt="KAISports logo" /></span>
+      <span>KAISports</span>
+    </a>
+    <button type="button" class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a class="active" href="../insights.html">Insights</a></li>
+      <li><a href="../publications.html">Publications</a></li>
+      <li><a href="../presentations.html">Presentations</a></li>
+      <li><a href="../gatherings.html">Gatherings</a></li>
+      <li><a href="../members.html">Members</a></li>
+    </ul>
+  </div>
+</header>
+
+<article class="article">
+
+  <header class="article-header">
+    <div class="meta">
+      <span class="tag">공지</span>
+      <span>2026년 5월 6일</span>
+      <span>· 5분 읽기</span>
+      <span>· KAISports 팀</span>
+    </div>
+    <h1>KAISports Insights를 시작합니다 — 데이터로 풀어보는 K리그</h1>
+    <p class="deck">앞으로 이 코너에서 어떤 글들을 올릴지 미리 소개하는 첫 글입니다. K리그를 데이터로 깊이 있게 들여다보고, 최신 AI 방법론을 친절하게 풀어내며, 데이터 사이언스와 스포츠 과학이 만나는 지점의 이야기를 함께 나누고자 합니다.</p>
+  </header>
+
+  <div class="article-body">
+
+    <p>KAISports는 그동안 비교적 조용한 자리에서 일해 왔습니다. 학회 논문과 포스터, 리그를 위한 기술 리포트가 주된 산출물이었지요. 작업은 보람 있었지만, 가장 흥미로운 순간들은 늘 12페이지 논문에 <em>다 담기지 않는</em> 부분에 있었습니다. 한 장의 차트가 갑자기 풍경을 다시 보게 만든 순간, 우리가 익숙하다고 믿었던 지표가 코치 한 분과의 대화로 완전히 다르게 보이게 된 순간 같은 것들 말입니다.</p>
+
+    <p><strong>KAISports Insights</strong>는 그런 순간들이 머무를 새로운 공간입니다. 우리가 늘 해 오던 AI · 스포츠 분석 작업을, 좀 더 길고 좀 더 시각적이며, 무엇보다 좀 더 대화하는 톤으로 나누는 곳입니다. 특히 K리그를 향한 애정과, 스포츠 과학을 빠르게 바꾸어 가는 최신 AI 방법론에 대한 호기심이 이 코너의 두 축이 될 예정입니다.</p>
+
+    <blockquote>
+      목표는 단순합니다. 우리가 이미 하고 있는 AI · 스포츠 분석 연구를 <em>읽히는 글</em>로 풀어내는 것 — 코치, 선수, 팬, 그리고 호기심 많은 연구자 모두에게요.
+    </blockquote>
+
+    <h2>앞으로 다룰 이야기들</h2>
+
+    <p>Insights는 우리 팀이 평소에 일하는 방식 그대로, 크게 세 가지 축으로 글을 풀어 갈 계획입니다.</p>
+
+    <h3>1. 데이터로 풀어보는 K리그</h3>
+    <p>K리그1·K리그2의 매치와 시즌, 때로는 한 선수에 대한 깊이 있는 분석을 다룹니다. 박스 스코어에 이미 적혀 있는 것이 아니라, 피치 위에서 <em>실제로</em> 일어나고 있는 일을 쓰고 싶습니다. 누가 가장 영리하게 압박을 거는가, 어떤 팀의 패스가 위험 지역을 가장 자주 통과하는가, 평판에 비해 조용히 좋은 결과를 내고 있는 포메이션은 무엇인가 같은 질문들이 이 카테고리의 출발점입니다.</p>
+
+    <h3>2. 방법론, 친절하게</h3>
+    <p>우리 팀이 그동안 발표해 온 기법들을 누구나 따라올 수 있도록 풀어 봅니다.</p>
+    <ul>
+      <li><strong>Trajectory imputation (궤적 보간)</strong> — 부분적인 데이터만 있을 때, 매 순간 모든 선수가 어디에 있었는지 복원하는 방법.</li>
+      <li><strong>그래프 신경망 기반 수비 가치 평가</strong> — 어떤 태클이 일어나지 <em>않게</em> 막은 그 순간의 가치를 정량화하는 시도.</li>
+      <li><strong>축구를 "말하는" 생성 트랜스포머</strong> — 매치를 언어처럼 학습한 모델에 "이 선수 대신 저 선수가 뛰었다면?"과 같은 가상 시나리오(counterfactual)를 묻는 접근.</li>
+      <li><strong>맥락을 반영한 압박 가치 평가</strong> — 누가 압박했는가가 아니라, <em>어느 순간에</em> 압박했는가를 측정하기.</li>
+    </ul>
+    <p>꼭 필요한 곳에서만 수식을 보여드립니다. 글을 읽고 났을 때 머리에 남는 것이 방정식이 아니라 <em>직관</em>이 되도록 쓰는 것이 목표입니다.</p>
+
+    <h3>3. 스포츠 과학과의 연결</h3>
+    <p>가장 흥미로운 질문들은 결국 데이터 사이언스와 우리 몸이 만나는 지점에서 나옵니다. GPS 부하와 피로, 맥락을 고려한 스프린트 분류, 트래킹 데이터로 다시 보는 전술 주기화(periodization) 같은 주제를, 현장에서 이런 신호들을 매일 다루는 분들과 함께 풀어 가고자 합니다.</p>
+
+    <hr />
+
+    <h2>예고편 — 곧 다룰 세 가지 이야기</h2>
+
+    <p>좀 더 구체적으로 어떤 글이 올라올지, 이미 준비 중인 세 편의 스케치를 미리 공개합니다.</p>
+
+    <ul>
+      <li><strong>"라 파우사(La Pausa)"를 측정하다.</strong> 패스 직전의 그 짧은 망설임 — 속도 대신 템포를 고르는 그 한 순간이, 왜 축구에서 가장 저평가된 능력 중 하나인지, 그리고 트래킹 데이터로 어떻게 그것을 측정할 수 있는지에 대한 글.</li>
+      <li><strong>K리그1 2025 압박 지도.</strong> 이벤트와 트래킹을 동기화한 데이터로 그린, 수비수별 압박 분포 아틀라스. 리그에서 가장 적극적으로 빌드업을 깨뜨리는 선수들이 실제로 어디에 살고 있는지를 시각화합니다.</li>
+      <li><strong>축구 언어 트랜스포머가 학습한 것은 무엇인가?</strong> 매치를 "언어"처럼 학습한 모델이, 처음 보는 선수의 단 몇 경기만으로 무엇을 알아내는지 — 그리고 어떤 지점에서 속는지 — 들여다보는 글.</li>
+    </ul>
+
+    <p>각각 별도의 포스트로, 차트와 애니메이션, 필요하면 코드까지 함께 공개할 예정입니다.</p>
+
+    <h2>글의 톤에 대해 한마디</h2>
+
+    <p>Insights는 학술 저널도 아니고, 자극적인 단정이 오가는 블로그도 아닙니다. 작업 과정을 가능한 한 투명하게 보여 드리고, 사용한 데이터와 출처를 밝히고, 데이터가 <em>말해 주지 않는 것</em>에도 솔직하려 합니다. 새로운 방법이거나 결과가 의외이면 그렇다고 말씀드리고, 우리가 믿었던 것이 틀렸다는 사실을 발견하면 그 글도 똑같이 쓸 생각입니다.</p>
+
+    <h2>함께해 주세요</h2>
+
+    <p>처음부터 같이 따라오고 싶으신 분, 협업이나 질문이 있으신 분은 언제든 <a href="mailto:thedatadribblers@gmail.com">thedatadribblers@gmail.com</a>으로 연락 주세요. 연구자, 분석가, 코치, 그리고 "축구는 무엇이 일어나고 있는지 보일 때 가장 아름답다"는 믿음을 함께 나누시는 모든 분을 환영합니다.</p>
+
+    <p>다음 글에서 뵙겠습니다.</p>
+
+    <p>— <strong>KAISports 팀 드림</strong></p>
+
+  </div>
+
+  <footer class="article-footer">
+    <a href="../insights.html">← Insights 목록으로</a>
+    <span>문의 &middot; <a href="mailto:thedatadribblers@gmail.com">thedatadribblers@gmail.com</a></span>
+  </footer>
+
+</article>
+
+<footer class="footer">
+  <p>Contact: <a class="email" href="mailto:thedatadribblers@gmail.com">thedatadribblers [at] gmail.com</a></p>
+  <p>&copy; <span id="year"></span> KAISports — Korea AI Research Society for Sports</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

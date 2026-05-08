@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gatherings — KAISports</title>
+<meta name="description" content="Offline gatherings and meetings of the KAISports community." />
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="alternate icon" href="assets/icons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+<meta name="theme-color" content="#0b6e4f" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="logo"><img src="assets/icons/kaisports-mark.svg" alt="KAISports logo" /></span>
+      <span>KAISports</span>
+    </a>
+    <button type="button" class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="presentations.html">Presentations</a></li>
+      <li><a class="active" href="gatherings.html">Gatherings</a></li>
+      <li><a href="members.html">Members</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <h1>Gatherings</h1>
+    <p>Offline meetings where the KAISports community comes together to share ideas.</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <div class="gathering-card">
+    <div class="photo" data-bg="assets/gatherings/gathering-3-2026-01-08.jpg"></div>
+    <div class="date">January 8, 2026</div>
+    <h3>Third Offline Meeting</h3>
+    <p>The most recent offline gathering of KAISports members and collaborators.</p>
+  </div>
+
+  <div class="gathering-card">
+    <div class="photo" data-bg="assets/gatherings/gathering-2-2024-06-13.jpg"></div>
+    <div class="date">June 13, 2024</div>
+    <h3>Second Offline Meeting</h3>
+    <p>The second offline gathering of KAISports members and collaborators.</p>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>Contact: <a class="email" href="mailto:thedatadribblers@gmail.com">thedatadribblers [at] gmail.com</a></p>
+  <p>&copy; <span id="year"></span> KAISports — Korea AI Research Society for Sports</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('.gathering-card .photo[data-bg]').forEach(el => {
+  el.style.backgroundImage = `url('${el.dataset.bg}')`;
+});
+</script>
+</body>
+</html>

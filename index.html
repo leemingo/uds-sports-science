@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KAISports — Korea AI Research Society for Sports</title>
+<meta name="description" content="KAISports (Korea AI Research Society for Sports / 한국스포츠인공지능연구회): Sports analytics, game strategy, and athlete performance enhancement powered by AI and data science." />
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="alternate icon" href="assets/icons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
+<meta name="theme-color" content="#0b6e4f" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <span class="logo"><img src="assets/icons/kaisports-mark.svg" alt="KAISports logo" /></span>
+      <span>KAISports</span>
+    </a>
+    <button type="button" class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="presentations.html">Presentations</a></li>
+      <li><a href="gatherings.html">Gatherings</a></li>
+      <li><a href="members.html">Members</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="ko">한국스포츠인공지능연구회</span>
+    <img class="hero-logo" src="assets/icons/kaisports-logo-white.svg" alt="KAIsports" />
+    <p class="subtitle">Korea AI Research Society for Sports — driving innovation in sports analysis, game strategy, and athlete performance through AI and data science.</p>
+    <a class="cta" href="mailto:thedatadribblers@gmail.com">Get in Touch</a>
+  </div>
+</section>
+
+<main class="container">
+
+  <section class="section">
+    <h2>About Us</h2>
+    <p class="lead">KAISports brings together researchers, engineers, and practitioners who believe AI can change how sports are studied and played. We share creative ideas across academia and industry to push the boundaries of sports analytics.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Sports Analysis</h3>
+        <p>Develop data-driven methods to understand match dynamics, tactics, and individual contributions.</p>
+      </div>
+      <div class="card">
+        <h3>Game Strategy</h3>
+        <p>Quantify decisions and uncover insights that help coaches and analysts plan and adapt.</p>
+      </div>
+      <div class="card">
+        <h3>Athlete Performance</h3>
+        <p>Combine tracking, GPS, and physiological signals to understand and improve athlete performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What We Do</h2>
+    <p class="lead">We publish at top venues such as KDD, CIKM, ECML PKDD, MIT Sloan Sports Analytics Conference, and Hudl Performance Insights, and collaborate with leagues and clubs around the world.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3><a href="publications.html">Publications</a></h3>
+        <p>Peer-reviewed research on football analytics, trajectory imputation, player valuation, and more.</p>
+      </div>
+      <div class="card">
+        <h3><a href="insights.html">Insights</a></h3>
+        <p>Data-driven essays on K League and beyond — modern AI methods explained for analysts and fans.</p>
+      </div>
+      <div class="card">
+        <h3><a href="presentations.html">Presentations</a></h3>
+        <p>Keynotes, conference talks, and invited lectures shared with the analytics community.</p>
+      </div>
+      <div class="card">
+        <h3><a href="gatherings.html">Gatherings</a></h3>
+        <p>Regular offline meetings to exchange ideas, results, and roadmaps for upcoming projects.</p>
+      </div>
+      <div class="card">
+        <h3><a href="members.html">Members</a></h3>
+        <p>Coordinators and members across academia and industry, united by a passion for sports AI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Partners</h2>
+    <p class="lead">We work closely with industry and academic partners to translate research into impact.</p>
+    <div class="partner-logos">
+      <div class="partner">
+        <img src="assets/partners/fitogether.png" alt="Fitogether Inc." loading="lazy" />
+        <span>Fitogether Inc.</span>
+      </div>
+      <div class="partner">
+        <img src="assets/partners/university-of-seoul.png" alt="University of Seoul" loading="lazy" />
+        <span>University of Seoul</span>
+      </div>
+      <div class="partner">
+        <img src="assets/partners/k-league.png" alt="K League" loading="lazy" />
+        <span>K League</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Join Us</h2>
+    <p class="lead">We welcome anyone who is eager to share creative ideas and shape the future of the sports industry. If you are interested in joining the research group, learning about our studies, or exploring collaboration opportunities, reach out to us.</p>
+    <a class="cta cta-filled" href="mailto:thedatadribblers@gmail.com">thedatadribblers@gmail.com</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Contact: <a class="email" href="mailto:thedatadribblers@gmail.com">thedatadribblers [at] gmail.com</a></p>
+  <p>&copy; <span id="year"></span> KAISports — Korea AI Research Society for Sports</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
