@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Skill versus Luck — Open Colloquium</title>
+<meta name="description" content="Open Colloquium session page for the Skill versus Luck presentation." />
+<link rel="icon" href="../assets/icons/seminars-favicon.svg" type="image/svg+xml" />
+<link rel="manifest" href="../site.webmanifest" />
+<meta name="theme-color" content="#143d6b" />
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="../index.html">
+      <img class="brand-logo" src="../assets/icons/uds.png" alt="Universitat des Saarlandes" />
+      <span class="brand-copy">
+        <strong>Institute of Sports Science</strong>
+      </span>
+    </a>
+    <button type="button" class="menu-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">Menu</button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Reading Group</a></li>
+      <li><a class="active" href="../open-colloquium.html">Open Colloquium</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="session-page">
+  <header class="session-header">
+    <p class="session-kicker">Open Colloquium • 06. Jul</p>
+    <h1>Skill versus Luck</h1>
+    <p class="session-summary">A planned Sports Analytics session exploring the balance between repeatable skill and stochastic outcomes in competitive settings.</p>
+  </header>
+
+  <dl class="session-meta-grid">
+    <div class="session-meta-card">
+      <dt>Presenter</dt>
+      <dd>tbd</dd>
+    </div>
+    <div class="session-meta-card">
+      <dt>Chair / Department</dt>
+      <dd>Sports Analytics</dd>
+    </div>
+    <div class="session-meta-card">
+      <dt>Format</dt>
+      <dd>Open Colloquium short presentation</dd>
+    </div>
+  </dl>
+
+  <div class="session-actions">
+    <a class="button-link" href="../open-colloquium.html">Back to Schedule</a>
+    <a class="button-link button-link-secondary" href="#materials">Jump to Materials</a>
+  </div>
+
+  <section class="panel session-panel">
+    <p class="section-label">Overview</p>
+    <h2>Session Focus</h2>
+    <p>This session slot is already titled but still awaiting presenter details. The page is created in advance so the colloquium can expose stable links early and attach the speaker, abstract, and presentation materials later without changing the main schedule structure.</p>
+  </section>
+
+  <section class="panel session-panel" id="materials">
+    <p class="section-label">Materials</p>
+    <h2>Presentation Materials</h2>
+    <p class="resource-note">This slot is prepared for later updates once the speaker and materials are confirmed.</p>
+    <div class="resource-list">
+      <div class="resource-item">
+        <strong>Slides</strong>
+        <span class="resource-note">To be added.</span>
+      </div>
+      <div class="resource-item">
+        <strong>Abstract / Summary</strong>
+        <span class="resource-note">To be added.</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Institute of Sports Science, Saarland University</p>
+  <p>&copy; <span id="year"></span> Seminar Series</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -322,53 +322,181 @@ a:hover {
   margin-bottom: 18px;
 }
 
-.schedule-table-wrap {
-  overflow-x: auto;
-  border-radius: 18px;
-  border: 1px solid rgba(20, 61, 107, 0.12);
-  background: rgba(255, 255, 255, 0.88);
+.talk-date-group + .talk-date-group {
+  margin-top: 26px;
 }
 
-.schedule-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 760px;
-}
-
-.schedule-table th,
-.schedule-table td {
-  padding: 12px 14px;
-  text-align: left;
-  vertical-align: middle;
-  border-bottom: 1px solid rgba(20, 61, 107, 0.1);
-  border-right: 1px solid rgba(20, 61, 107, 0.08);
-  font-size: 0.95rem;
-}
-
-.schedule-table th:last-child,
-.schedule-table td:last-child {
-  border-right: 0;
-}
-
-.schedule-table thead th {
-  background: rgba(20, 61, 107, 0.08);
-  color: var(--ink);
-  font-weight: 800;
-}
-
-.schedule-table tbody tr:last-child td {
-  border-bottom: 0;
-}
-
-.schedule-table td:first-child {
-  width: 110px;
-  white-space: nowrap;
-  font-weight: 700;
+.talk-date-group h3 {
+  margin: 0 0 14px;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.6rem;
   color: var(--accent);
 }
 
-.schedule-empty {
-  color: rgba(88, 101, 122, 0.72);
+.talk-list {
+  display: grid;
+  gap: 14px;
+}
+
+.talk-card {
+  padding: 20px 22px;
+  border-radius: 18px;
+  border: 1px solid rgba(20, 61, 107, 0.12);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.talk-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.talk-card h4 a {
+  color: var(--ink);
+}
+
+.talk-card-meta {
+  margin: 0 0 6px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.talk-card-submeta {
+  margin: 0;
+  color: var(--muted);
+}
+
+.talk-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.mini-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: rgba(20, 61, 107, 0.1);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.mini-link:hover {
+  text-decoration: none;
+  background: rgba(20, 61, 107, 0.16);
+}
+
+.mini-link-secondary {
+  background: rgba(185, 106, 45, 0.12);
+  color: #845024;
+}
+
+.mini-link-secondary:hover {
+  background: rgba(185, 106, 45, 0.18);
+}
+
+.talk-card-empty {
+  border-style: dashed;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.session-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 28px 24px 72px;
+}
+
+.session-header {
+  margin-bottom: 22px;
+}
+
+.session-kicker {
+  margin: 0 0 10px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.session-header h1 {
+  margin: 0 0 12px;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.05;
+}
+
+.session-summary {
+  margin: 0;
+  font-size: 1.02rem;
+  color: var(--muted);
+}
+
+.session-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.session-meta-card {
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(20, 61, 107, 0.1);
+}
+
+.session-meta-card dt {
+  margin-bottom: 5px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.session-meta-card dd {
+  margin: 0;
+}
+
+.session-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 18px 0 28px;
+}
+
+.resource-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.resource-item {
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(20, 61, 107, 0.1);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.resource-item strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.resource-note {
+  color: var(--muted);
+}
+
+.session-panel + .session-panel {
+  margin-top: 18px;
 }
 
 .footer {
@@ -501,6 +629,10 @@ a:hover {
   }
 
   .content-shell {
+    padding: 22px 20px 56px;
+  }
+
+  .session-page {
     padding: 22px 20px 56px;
   }
 }
